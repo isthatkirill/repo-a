@@ -6,8 +6,10 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                sleep 100
-                echo 'repo-a'
+                sleep 60
+                echo '1'
+                echo '2'
+                echo '3'
             }
         }
     }
