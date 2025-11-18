@@ -8,6 +8,10 @@ pipeline {
             steps {
                 sleep 60
                 echo '1'
+                echo '1'
+                echo '1'
+                echo '1'
+                
                  echo '1'
                  echo '1'
                  echo '1'
