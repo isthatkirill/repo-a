@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                sleep 60
+                sleep 6
                 echo '1'
                 echo '1'
                 echo '1'
