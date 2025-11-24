@@ -1,36 +1,10 @@
 pipeline {
-    agent {
-        label 'node01'
-    }
-    
+    agent any
+
     stages {
         stage('Hello') {
             steps {
-                sleep 6
-                echo '1'
-                echo '1'
-                echo '1'
-                echo '1'
-                echo '1'
-                echo '1'
-                
-                echo '1'
-                echo '1'
-                echo '1'
-                
-                echo '1'
-                echo '1'
-                echo '1'
-                echo '1'
-                echo '1'
-                echo '1'
-                echo '1'
-                
-                 echo '1'
-                 echo '1'
-                 echo '1'
-                echo '2'
-                echo '3'
+                echo 'Привет, Мир!'
             }
         }
     }
