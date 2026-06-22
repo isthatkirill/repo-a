@@ -4,7 +4,9 @@
           stage('Build') {                                                                                                                                                                                   
               steps {
                   setBuildCustomName 'Release-$Date:yyyy.MM.dd}-${Branchq}-${Rev}'
-                  sleep 100                                                                                                                                                                     
+                  sleep 30       
+                  setBuildCustomName 'DOM-${DayOfMonth}'
+                  sleep 10
               }                                                                                                                                                                                                
           }                                                                                                                                                                                                    
       }                                                                                                                                                                                                        
