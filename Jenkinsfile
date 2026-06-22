@@ -1,12 +1,11 @@
-pipeline {
-    agent any
-
-    stages {
-        stage('Hello') {
-            steps {
-                echo 'Привет, Мир!вйц'
-                sleep 100
-            }
-        }
-    }
-}
+ pipeline {                                                                                                                                                                                                   
+      agent any                                                                                                                                                                                                
+      stages {                                                                                                                                                                                                 
+          stage('Build') {                                                                                                                                                                                   
+              steps {
+                  setBuildCustomName 'Release-${Date:yyyy.MM.dd}-${Branch}-${Rev}'
+                  sleep 100                                                                                                                                                                     
+              }                                                                                                                                                                                                
+          }                                                                                                                                                                                                    
+      }                                                                                                                                                                                                        
+  }      
