@@ -1,10 +1,5 @@
  pipeline {                                                                                                                                                                                                   
-      agent {
-        pool {
-            name "Engr1"
-            allowPublicAgents true
-        }
-    }
+      agent any
 
     stages {
         stage('Hello') {
