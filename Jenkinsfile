@@ -1,13 +1,16 @@
  pipeline {                                                                                                                                                                                                   
-      agent any                                                                                                                                                                                                
-      stages {                                                                                                                                                                                                 
-          stage('Build') {                                                                                                                                                                                   
-              steps {
-                  setBuildCustomName 'Release-$Date:yyyy.MM.dd}-${Branchq}-${Rev}'
-                  sleep 30       
-                  setBuildCustomName 'DOM-${DayOfMonth}'
-                  sleep 10
-              }                                                                                                                                                                                                
-          }                                                                                                                                                                                                    
-      }                                                                                                                                                                                                        
+      agent {
+        pool {
+            name "Engr1"
+            allowPublicAgents true
+        }
+    }
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }                                                                                                                                                                                                 
   }      
